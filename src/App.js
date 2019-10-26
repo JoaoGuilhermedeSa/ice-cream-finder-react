@@ -18,7 +18,7 @@ class App extends Component {
 
 
     makeHttpRequestWithPage = async pageNumber => {
-        const response = await fetch(`http://localhost:3100/api/ice-cream?limit=3&offset=${pageNumber}`, {
+        const response = await fetch(`https://ice-cream-finder-backend.herokuapp.com/api/ice-cream?limit=3&offset=${pageNumber}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
